@@ -2,29 +2,33 @@
 <html lang="en">
     <header>
         <title>Tesla Cars Shop</title>
+        <link rel="stylesheet" href="style.css">
+        
     </header>
 
     <body>
-        <h1 id="title">Tesla Cars</h1>
+        <h1 id="title">TESLA CARS</h1>
 
         <p id="description">Please fill up the form below to complete your order :</p>
 
         <form id="survey-form">
+
+          <div class="headings-input"  
           
-            <label for="name" id="name-label">Full Name : </label>
-            <input type="text" id="name" name="name" placeholder="Elon Musk" required>
+            <label for="name" id="name-label"><b>Full Name : </b></label>
+            <input type="text" id="name" name="name" placeholder="Elon Musk" class="form-input" required>
             <br>
 
-            <label for="email" id="email-label">Email : </label>
-            <input type="email" id="email" name="email" placeholder="elon.musk@tesla.com" required>
+            <label for="email" id="email-label"><b>Email : </b></label>
+            <input type="email" id="email" name="email" class="form-input" placeholder="elon.musk@tesla.com" required>
             <br>
 
-            <label for="age" id="number-label">Age : </label>
-            <input type="number" id="number" name="age" placeholder="18" min="18" max="100" required>
+            <label for="age" id="number-label"><b>Age : </b></label>
+            <input type="number" id="number" name="age" class="form-input" placeholder="18" min="18" max="100" required>
             <br>
 
             <label for="country" id="country-label">Country : </label>
-            <select id="country" name="country" required>
+            <select id="country" name="country" class="form-input" required>
                     <option value="" disabled selected hidden>Please Select...</option>
                     <option value="Afganistan">Afghanistan</option>
                     <option value="Albania">Albania</option>
@@ -276,7 +280,7 @@
                 <br>
                 <br>
                 <label for="dropdown" id="model-label"><b>Select Model :</b></label>
-                <select id="dropdown" name="model">
+                <select id="dropdown" name="model" class="form-input">
                     <option value="" disabled selected hidden>Choose Model</option>
                     <option value="Model_S"> Model S </option>
                     <option value="Model_3"> Model 3 </option>
@@ -287,44 +291,46 @@
                 <br>
                 <br>
                 <label for="model-color" id="model-color-label"><b>Model Color :</b></label>
+                <br>
                 <!-- * Add Display Image for each model selected -->
+                <input type="radio" id="model-color-radio" name="color" value="pearl-white">
                 <label for="model-color" id="model-color">Pearl White</label>
-                <input type="radio" id="model-color" name="pearl-white" value="pearl-white">
-
+                <br>
+                <input type="radio" id="model-color-radio" name="color" value="dark-silver-metallic">
                 <label for="model-color" id="model-color">Dark Silver Metallic</label>
-                <input type="radio" id="model-color" name="dark-silver-metallic" value="dark-silver-metallic">
-
+                <br>    
+                <input type="radio" id="model-color-radio" name="color" value="black">
                 <label for="model-color" id="model-color">Black</label>
-                <input type="radio" id="model-color" name="black" value="black">
-
+                <br>
+            
+                <input type="radio" id="model-color-radio" name="color" value="blue-metallic">
                 <label for="model-color" id="model-color">Blue Metallic</label>
-                <input type="radio" id="model-color" name="blue-metallic" value="blue-metallic">
-
+                <br>
+                <input type="radio" id="model-color-radio" name="color" value="red-multi-coat">
                 <label for="model-color" id="model-color">Red Multi-coat</label>
-                <input type="radio" id="model-color" name="red-multi-coat" value="red-multi-coat">
                 <br>
                 <br>
                 <label for="features" id="features-label"><b>Add Features : </b></label>
-                
-                <label for="checkbox" id="checkbox-label">Glass Roof </label> 
+                <br>
                 <input type="checkbox" id="checkbox" value="glass-roof">
-
-                <label for="checkbox" id="checkbox-label">Heated Steering Wheel </label>
+                <label for="checkbox" id="checkbox-label">Glass Roof </label> 
+                <br>
                 <input type="checkbox" id="checkbox" value="heated-steering-wheel">
-
-                <label for="checkbox" id="checkbox-label">Cooling-Warming Seats </label>
+                <label for="checkbox" id="checkbox-label">Heated Steering Wheel </label>
+                <br>
                 <input type="checkbox" id="checkbox" value="cooling-warming-seats">
-
-                <label for="checkbox" id="checkbox-label">Full Auto-Pilot </label>
+                <label for="checkbox" id="checkbox-label">Cooling / Warming Seats </label>
+                <br>
                 <input type="checkbox" id="checkbox" value="full-auto-pilot">
+                <label for="checkbox" id="checkbox-label" >Full Auto-Pilot </label>
                 <br>
                 <br>
                 <label for="comments" id="-comments">Comments : (optional) </label>
                 <br>
                 <textarea id="textarea" name="textarea" rows="5" cols="60"></textarea>
                 <br>
-                <input type="submit" id="submit" value="Complete Order">
-
+                <button id="submit" class="order-button">Complete Order</button>
+            </div>
             </form>
     </body>
 </html>
