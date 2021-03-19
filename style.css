@@ -4,12 +4,36 @@
 
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;600&display=swap');
     
+    @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Quicksand:wght@300;400&display=swap');
 
-        h1 {
-            font-family: 'Poppins', sans-serif;
-            font-weight: bolder;
+    @font-face {
+            font-family: 'tesla-webfont';
+            src: url(fonts/tesla-webfont.woff);
+            }
+
+        .header {
+            font-family: 'tesla-webfont', sans-serif;
+            font-size: 50px;           
+            text-align: center;
+            padding: 10px 16px;
+            background-image: url(images/metalgray.jpg);
+            background-repeat: no-repeat;
+            background-size: 1000px 200px;
+            background-position: center;
+            line-height: normal;
+            width: 100%;
+            
+
         }
+        
        
+        .subheader {
+            font-family: 'Quicksand', 'Open Sans', 'Helvetica Neue', sans-serif Courier, monospace;
+            font-size: 35px;
+            text-align: center;
+            line-height: 6px;
+            width: 100%;
+        }
        
         body {
             font-family: 'Open Sans', sans-serif;
@@ -17,13 +41,15 @@
             line-height: 2.1;
             font-size: larger;
             margin: auto;
+            padding: 16px;
             width: 700px;
-            background: linear-gradient(to bottom right, rgb(22, 81, 110), silver)
+            background: linear-gradient(to bottom right, rgb(20, 34, 41), silver)
         }
         
     
         p {
             font-size: larger;
+            padding-top: 10%;
         }
 
         form {
